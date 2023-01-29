@@ -29,8 +29,8 @@ namespace WPFProject.Services
 
                 string nodeName;
 
-                if (node.Attributes.Count > 0)
-                    nodeName = node.Attributes[0].Value;
+                if (node.Attributes.Count == 2)
+                    nodeName = node.Name + " " + node.Attributes[0].Value;
                 else
                     nodeName = node.Name;
 
